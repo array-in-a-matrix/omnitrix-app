@@ -3,14 +3,16 @@ from tkinter import *
 root = Tk()
 
 root.title("Omnitrix")
-root.attributes('-fullscreen',True)
+root.attributes('-fullscreen', True)
 count = 0
+
 
 def count_up():
     global count
     count += 1
     print(count)
-    
+
+
 root.geometry("640x480")
 root.configure(bg="#70b607")
 
