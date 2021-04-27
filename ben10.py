@@ -23,4 +23,8 @@ omnitrix_button = Button(root, image=omnitrix, bg="#70b607",
 
 omnitrix_button.place(relx=0.5, rely=0.5, anchor=CENTER)
 
+quit_button = Button(root, text="QUIT", fg="red",command=root.destroy)
+quit_button.place(rely=1.0, relx=1.0, x=0, y=0, anchor=SE)
+
 root.mainloop()
+
