@@ -3,7 +3,7 @@ from tkinter import *
 root = Tk()
 
 root.title("Omnitrix")
-
+root.attributes('-fullscreen',True)
 count = 0
 
 def count_up():
