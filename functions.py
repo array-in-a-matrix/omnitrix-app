@@ -1,4 +1,4 @@
-from aliens import alien_table
+from aliens import *
 
 counter= 0
 
@@ -19,3 +19,7 @@ def transform():
         print(alien_table(counter))
     elif counter > 0:
         print(alien_table(counter))
+#     change_image(counter)
+
+# def change_image(counter):
+#     omnitrix_screen = PhotoImage(file= image_display(counter))
