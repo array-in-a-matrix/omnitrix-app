@@ -1,8 +1,8 @@
 
 def alien_table(index):
     return {
-        
-        0: "Heatblast",
+
+        0: "Human",
         1: "Cannonbolt",
         2: "Ripjaws",
         3: "Diamondhead",
@@ -14,5 +14,6 @@ def alien_table(index):
         9: "Wildmutt",
         10: "Ghostfreak",
         11: "Wildvine",
+        12: "Heatblast",
 
     }.get(index, "error")
