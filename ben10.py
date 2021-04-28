@@ -1,24 +1,10 @@
 from tkinter import *
 from aliens import alien_table
-
+from functions import *
 root = Tk()
 
 root.title("Omnitrix")
 # root.attributes('-fullscreen', True)
-counter= 0
-
-def count_up():
-    global counter
-    counter+= 1
-    # print(counter)
-
-def count_down():
-    global counter
-    counter-= 1
-    # print(counter)
-
-def transform():
-    print(alien_table(counter))
 
 root.geometry("640x480")
 root.configure(bg="#70b607")
