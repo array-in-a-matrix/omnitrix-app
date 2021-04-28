@@ -9,7 +9,8 @@ root.title("Omnitrix")
 root.geometry("640x480")
 root.configure(bg="#70b607")
 
-omnitrix_screen = PhotoImage(file="omnitrix.png")
+
+omnitrix_screen = PhotoImage(file="res/omnitrix.png")
 
 omnitrix_button = Button(root, image=omnitrix_screen, bg="#70b607",
                          activebackground='#70b607', highlightthickness=0, bd=0, command=transform)
