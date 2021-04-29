@@ -17,14 +17,16 @@ omnitrix_button = Button(root, image=omnitrix_screen, bg="#70b607",
 
 omnitrix_button.place(relx=0.5, rely=0.5, anchor=CENTER)
 
-quit_button = Button(root, text="X", fg="white",command=root.destroy, highlightthickness=0, bd=0)
-quit_button.place(rely=1.0, relx=1.0, x=0, y=0, anchor=SE)
 
-omnitrix_left = Button(root, text="<", fg="white", bg="black" ,command=count_down, highlightthickness=0, bd=0, height = 20)
-omnitrix_right = Button(root, text=">", fg="white",  bg="black" ,command=count_up, highlightthickness=0, bd=0, height = 20)
+omnitrix_left = Button(root, text="<", fg="white", bg="black" ,command=count_down, highlightthickness=0, bd=0, height = 40, width= 4)
+omnitrix_right = Button(root, text=">", fg="white",  bg="black" ,command=count_up, highlightthickness=0, bd=0, height = 40, width= 4)
 
 omnitrix_left.pack(side="left")
 omnitrix_right.pack(side="right")
+
+
+quit_button = Button(root, text="X", fg="white",command=root.destroy, highlightthickness=0, bd=0, width= 7)
+quit_button.pack(side="bottom")
 
 root.mainloop()
 
