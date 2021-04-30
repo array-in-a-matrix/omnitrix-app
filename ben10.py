@@ -48,7 +48,7 @@ omnitrix_left.grid(column=0, row=1, rowspan=3)
 omnitrix_right = Button(root, text=">", fg="white",  bg="black",
                         command=lambda: count_up(omnitrix_button), highlightthickness=0, bd=0, height=30, width=4)
 # omnitrix_right.pack(side="right")
-omnitrix_right.grid(column=3, row=1,rowspan=3)
+omnitrix_right.grid(column=3, row=1, rowspan=3)
 # changes alien button (right)
 
 
