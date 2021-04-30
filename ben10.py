@@ -5,7 +5,7 @@ from PIL import ImageTk, Image
 
 root = Tk()
 root.title("Omnitrix")
-# root.attributes('-fullscreen', True)
+root.attributes('-fullscreen', True)
 root.geometry("640x480")
 root.configure(bg="#70b607")
 root.columnconfigure(1, weight=1)
