@@ -25,39 +25,42 @@ omnitrix_button.image = img
 omnitrix_button.grid(column=1, row=1, rowspan=2, columnspan=2)
 # middle button
 
+
 omnitrix_left_skip = Button(root, text="<<<", fg="white", bg="black",
-                            highlightthickness=0, bd=0, height=10, width=4)
+                            highlightthickness=0, bd=0, height=5, width=4)
 # omnitrix_left_skip.pack(side="left")
-omnitrix_left_skip.grid(column=0, row=0,  sticky=NW)
+omnitrix_left_skip.grid(column=0, row=0)
 # bulk skip left button
 
 omnitrix_right_skip = Button(root, text=">>>", fg="white",  bg="black",
-                             highlightthickness=0, bd=0, height=10, width=4)
+                             highlightthickness=0, bd=0, height=5, width=4)
 # omnitrix_right_skip.pack(side="right")
-omnitrix_right_skip.grid(column=3, row=0,  sticky=NE)
+omnitrix_right_skip.grid(column=3, row=0)
 # bulk skip right button
 
+
 omnitrix_left = Button(root, text="<", fg="white", bg="black",
-                       command=lambda: count_down(omnitrix_button), highlightthickness=0, bd=0, height=10, width=4)
+                       command=lambda: count_down(omnitrix_button), highlightthickness=0, bd=0, height=30, width=4)
 # omnitrix_left.pack(side="left")
-omnitrix_left.grid(column=0, row=1, sticky=W, rowspan=2)
+omnitrix_left.grid(column=0, row=1, rowspan=3)
 # changes alien button (left)
 
 omnitrix_right = Button(root, text=">", fg="white",  bg="black",
-                        command=lambda: count_up(omnitrix_button), highlightthickness=0, bd=0, height=10, width=4)
+                        command=lambda: count_up(omnitrix_button), highlightthickness=0, bd=0, height=30, width=4)
 # omnitrix_right.pack(side="right")
-omnitrix_right.grid(column=3, row=1, sticky=E, rowspan=2)
+omnitrix_right.grid(column=3, row=1,rowspan=3)
 # changes alien button (right)
 
+
 quit_button = Button(root, text="X", fg="white", bg="black",
-                     command=root.destroy, highlightthickness=0, bd=0, width=7)
+                     command=root.destroy, highlightthickness=0, bd=0, width=5, height=4)
 # quit_button.pack(side="bottom")
-quit_button.grid(column=1, row=3, sticky=S, columnspan=2)
+quit_button.grid(column=1, row=3, columnspan=2)
 # kills program
 
-change_entry = Entry(root,fg="black", bg="white",
-                     highlightthickness=0, bd=0, width=7)
+change_entry = Entry(root, fg="black", bg="white",
+                     highlightthickness=0, bd=0, width=5)
 # quit_button.pack(side="bottom")
-change_entry.grid(column=1, row=0, sticky=N, columnspan=2)
+change_entry.grid(column=1, row=0, columnspan=2)
 #
 root.mainloop()
