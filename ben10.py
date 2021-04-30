@@ -8,10 +8,10 @@ root.title("Omnitrix")
 # root.attributes('-fullscreen', True)
 root.geometry("640x480")
 root.configure(bg="#70b607")
+root.columnconfigure(1, weight=1)
+root.rowconfigure(1, weight=1)
 # root window parameters
 
-
-# grid to hold buttons
 
 path = "res/omnitrix.png"
 img = ImageTk.PhotoImage(Image.open(path))
@@ -43,6 +43,8 @@ omnitrix_left = Button(root, text="<", fg="white", bg="black",
                        command=lambda: count_down(omnitrix_button), highlightthickness=0, bd=0, height=30, width=4)
 # omnitrix_left.pack(side="left")
 omnitrix_left.grid(column=0, row=1, rowspan=3)
+
+
 # changes alien button (left)
 
 omnitrix_right = Button(root, text=">", fg="white",  bg="black",
