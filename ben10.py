@@ -14,7 +14,7 @@ root.rowconfigure(1, weight=1)
 # root window parameters
 
 
-path = "res/omnitrix.png"
+path = "res/Omnitrix.png"
 img = ImageTk.PhotoImage(Image.open(path))
 omnitrix_button = Button(root, bg="#70b607", image=img, activebackground='#70b607',
                          highlightthickness=0, bd=0, command=button_press)

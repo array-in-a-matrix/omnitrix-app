@@ -22,19 +22,19 @@ def alien_table(index):
 def image_display(index):
     return {
 
-        0: "res/omnitrix.png",
-        1: "res/heatblast.png",
-        2: "res/nasaSquare.png",
-        3: "res/????.jpg",
-        4: "res/energy-momentum-relation-equation-epc.jpg",
-        5: "res/em1_patch_final.png",
-        6: "res/artemis.png",
-        7: "XLR8",
-        8: "Grey Matter",
-        9: "Wildmutt",
-        10: "Ghostfreak",
-        11: "Wildvine",
-        12: "Heatblast",
+        0: "res/Omnitrix.png",
+        1: "res/Heatblast.png",
+        2: "res/",
+        3: "res/",
+        4: "res/",
+        5: "res/",
+        6: "res/",
+        7: "res/",
+        8: "res/",
+        9: "res/",
+        10: "res/Ghostfreak.png",
+        11: "res/",
+        12: "res/",
         # TODO: Add more aliens
         # TODO: Add proper alien silhouettes
     }.get(index, "res/omnitrix.png")
