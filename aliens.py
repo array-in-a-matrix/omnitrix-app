@@ -3,7 +3,7 @@ def alien_table(index):
     return {
 
         0: "OFF",
-        1: "Cannonbolt",
+        1: "Heatblast",
         2: "Ripjaws",
         3: "Diamondhead",
         4: "Stinkfly",
@@ -14,7 +14,7 @@ def alien_table(index):
         9: "Wildmutt",
         10: "Ghostfreak",
         11: "Wildvine",
-        12: "Heatblast",
+        12: "Cannonbolt",
         # TODO: Add more aliens
     }.get(index, "ERROR")
 
