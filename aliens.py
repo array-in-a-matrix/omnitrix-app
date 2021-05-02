@@ -49,6 +49,5 @@ def image_display(index):
         17: "res/Ditto.png",
         18: "res/Frankenstrike.png",
         19: "res/Blitzwolfer.png",
-        # TODO: Add more aliens
-        # TODO: Add proper alien silhouettes
+        # ! write function to take name from alien_table and get locationto
     }.get(index, "res/omnitrix.png")
