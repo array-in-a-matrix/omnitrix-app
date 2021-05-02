@@ -16,6 +16,7 @@ def count_up(omnitrix_button):
     omnitrix_button.configure(image=img)
     omnitrix_button.image = img  # keep a reference!
 
+
 def count_down(omnitrix_button):
     global counter
     counter -= 1
@@ -38,6 +39,7 @@ def button_press():
         print(alien_table(counter))
 # ! replace with sound playing function
 
+
 def skip_up(omnitrix_button):
     global counter
     counter += 5
@@ -49,6 +51,7 @@ def skip_up(omnitrix_button):
     img = ImageTk.PhotoImage(Image.open(path))
     omnitrix_button.configure(image=img)
     omnitrix_button.image = img  # keep a reference!
+
 
 def skip_down(omnitrix_button):
     global counter
