@@ -3,6 +3,9 @@ from aliens import alien_table
 from functions import *
 from PIL import ImageTk, Image
 
+start()
+# start up sound effect
+
 root = Tk()
 root.title("Omnitrix")
 # root.attributes('-fullscreen', True)
@@ -10,7 +13,6 @@ root.geometry("640x480")
 root.configure(bg="#70b607")
 root.columnconfigure(1, weight=1)
 root.rowconfigure(1, weight=1)
-
 # root window parameters
 
 
@@ -50,11 +52,5 @@ quit_button = Button(root, text="X", fg="white", bg="black",
                      command=root.destroy, highlightthickness=0, bd=0, width=10, height=2)
 quit_button.grid(column=1, row=3, columnspan=2)
 # kills program
-
-# change_entry = Entry(root, fg="black", bg="white",
-#                      highlightthickness=0, bd=0, width=5)
-# change_entry.grid(column=1, row=0, columnspan=2)
-# change to specific entry
-
 
 root.mainloop()

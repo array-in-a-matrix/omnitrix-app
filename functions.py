@@ -1,10 +1,11 @@
 from aliens import *
 from PIL import ImageTk, Image
+from playsound import playsound as sound 
 
 counter = 0
 
-
 def count_up(omnitrix_button):
+    sound("res/sound_switch.mp3")
     global counter
     counter += 1
     print(counter)
@@ -18,6 +19,7 @@ def count_up(omnitrix_button):
 
 
 def count_down(omnitrix_button):
+    sound("res/sound_switch.mp3")
     global counter
     counter -= 1
     print(counter)
@@ -31,6 +33,7 @@ def count_down(omnitrix_button):
 
 
 def button_press():
+    sound("res/sound_transformation.mp3")
     if counter < 0:
         print(alien_table(counter * -1))
     elif counter == 0:
@@ -41,6 +44,7 @@ def button_press():
 
 
 def skip_up(omnitrix_button):
+    sound("res/sound_switch.mp3")
     global counter
     counter += 5
     print(counter)
@@ -54,6 +58,7 @@ def skip_up(omnitrix_button):
 
 
 def skip_down(omnitrix_button):
+    sound("res/sound_switch.mp3")
     global counter
     counter -= 5
     print(counter)
@@ -64,3 +69,7 @@ def skip_down(omnitrix_button):
     img = ImageTk.PhotoImage(Image.open(path))
     omnitrix_button.configure(image=img)
     omnitrix_button.image = img  # keep a reference!
+
+
+def start():
+    sound("res/sound_startup.mp3")
