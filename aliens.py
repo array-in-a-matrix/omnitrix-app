@@ -24,3 +24,4 @@ def alien_table(index):
         19: "Blitzwolfer",
         # TODO: Add more aliens
     }.get(index, 0)
+# list of aliens program can displays
