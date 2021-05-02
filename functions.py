@@ -34,13 +34,7 @@ def count_down(omnitrix_button):
 
 def button_press():
     sound("res/sound_transformation.mp3")
-    if counter < 0:
-        print(alien_table(counter * -1))
-    elif counter == 0:
-        print(alien_table(counter))
-    elif counter > 0:
-        print(alien_table(counter))
-# ! replace with sound playing function
+
 
 
 def skip_up(omnitrix_button):
@@ -73,3 +67,14 @@ def skip_down(omnitrix_button):
 
 def start():
     sound("res/sound_startup.mp3")
+
+
+def image_display(index):
+    alien = alien_table(index)
+    if(alien == 0):
+        global counter
+        counter = 0
+        return "res/Omnitrix.png"
+    else:
+        image_location = "res/" + alien + ".png"
+        return image_location

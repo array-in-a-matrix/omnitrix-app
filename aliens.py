@@ -2,7 +2,7 @@
 def alien_table(index):
     return {
 
-        0: "OFF",
+        0: "Omnitrix",
         1: "Heatblast",
         2: "Ripjaws",
         3: "Diamondhead",
@@ -23,31 +23,4 @@ def alien_table(index):
         18: "Frankenstrike",
         19: "Blitzwolfer",
         # TODO: Add more aliens
-    }.get(index, "ERROR")
-
-
-def image_display(index):
-    return {
-
-        0: "res/Omnitrix.png",
-        1: "res/Heatblast.png",
-        2: "res/ripJaws.png",
-        3: "res/Diamondhead.png",
-        4: "res/Stinkfly.png",
-        5: "res/Four Arms.png",
-        6: "res/Upgrade.png",
-        7: "res/XLR8.png",
-        8: "res/Grey Matter.png",
-        9: "res/Wildmutt.png",
-        10: "res/Ghostfreak.png",
-        11: "res/Wildvine.png",
-        12: "res/Cannonbolt.png",
-        13: "res/Upchuck.png",
-        14: "res/Way Big.png",
-        15: "res/Eye Guy.png",
-        16: "res/Snare-oh.png",
-        17: "res/Ditto.png",
-        18: "res/Frankenstrike.png",
-        19: "res/Blitzwolfer.png",
-        # ! write function to take name from alien_table and get locationto
-    }.get(index, "res/omnitrix.png")
+    }.get(index, 0)
