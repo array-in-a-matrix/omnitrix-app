@@ -9,7 +9,6 @@ def count_up(omnitrix_button):
     BoomBox("res/sound_switch.mp3").play()
     global counter
     counter += 1
-    print(counter)
     if counter < 0:
         path = image_display(counter * -1)
     else:
@@ -23,7 +22,6 @@ def count_down(omnitrix_button):
     BoomBox("res/sound_switch.mp3").play()
     global counter
     counter -= 1
-    print(counter)
     if counter < 0:
         path = image_display(counter * -1)
     else:
@@ -43,7 +41,6 @@ def skip_up(omnitrix_button):
     BoomBox("res/sound_switch.mp3").play()
     global counter
     counter += 5
-    print(counter)
     if counter < 0:
         path = image_display(counter * -1)
     else:
@@ -58,7 +55,6 @@ def skip_down(omnitrix_button):
     BoomBox("res/sound_switch.mp3").play()
     global counter
     counter -= 5
-    print(counter)
     if counter < 0:
         path = image_display(counter * -1)
     else:
