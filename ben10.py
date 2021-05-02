@@ -20,7 +20,6 @@ path = "res/Omnitrix.png"
 img = ImageTk.PhotoImage(Image.open(path))
 omnitrix_button = Button(root, bg="#70b607", image=img, activebackground='#70b607',
                          highlightthickness=0, bd=0, command=button_press)
-# TODO: make sound when pressed
 omnitrix_button.image = img
 omnitrix_button.grid(column=1, row=0, rowspan=3, columnspan=2)
 # middle button
