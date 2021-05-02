@@ -1,12 +1,12 @@
 from aliens import *
 from PIL import ImageTk, Image
-from playsound import playsound as sound 
+from boombox import BoomBox 
 
 counter = 0
 # determans which image is shown
 
 def count_up(omnitrix_button):
-    sound("res/sound_switch.mp3")
+    BoomBox("res/sound_switch.mp3").play()
     global counter
     counter += 1
     print(counter)
@@ -20,7 +20,7 @@ def count_up(omnitrix_button):
 # whenever "omnitrix_left" button is pressed, plays sound effect, adds 1 to the counter and change the image  
 
 def count_down(omnitrix_button):
-    sound("res/sound_switch.mp3")
+    BoomBox("res/sound_switch.mp3").play()
     global counter
     counter -= 1
     print(counter)
@@ -35,12 +35,12 @@ def count_down(omnitrix_button):
 
 
 def button_press():
-    sound("res/sound_transformation.mp3")
+     BoomBox("res/sound_transformation.mp3").play()
 # whenever the "middle_button" button is pressed play sound effect
 
 
 def skip_up(omnitrix_button):
-    sound("res/sound_switch.mp3")
+    BoomBox("res/sound_switch.mp3").play()
     global counter
     counter += 5
     print(counter)
@@ -55,7 +55,7 @@ def skip_up(omnitrix_button):
 
 
 def skip_down(omnitrix_button):
-    sound("res/sound_switch.mp3")
+    BoomBox("res/sound_switch.mp3").play()
     global counter
     counter -= 5
     print(counter)
@@ -70,7 +70,7 @@ def skip_down(omnitrix_button):
 
 
 def start():
-    sound("res/sound_startup.mp3")
+     BoomBox("res/sound_startup.mp3").play()
 # when program first starts up, plays sound effect
 
 def image_display(index):
