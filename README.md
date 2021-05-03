@@ -2,6 +2,6 @@
 
 An app made to simulate the omnitrix from the ben 10 TV series.
 
-## planed features:
+## planned features:
 - color changing background
 - keybinds
