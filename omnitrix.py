@@ -6,7 +6,6 @@ from PIL import ImageTk, Image
 start()
 # start up sound effect
 
-
 root = Tk()
 background = StringVar()
 background.set("#70b607")
