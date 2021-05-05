@@ -1,4 +1,4 @@
-# raspberry-pi-omnitrix
+# omnitrix app
 
 An app made to simulate the omnitrix from the ben 10 TV series.
 
