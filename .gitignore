@@ -6,6 +6,6 @@ res/*png~
 
 dist/
 
-omnitrix.egg-info
+*.egg-info
 
 setup*
