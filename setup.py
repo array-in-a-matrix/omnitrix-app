@@ -1,7 +1,7 @@
 from setuptools import setup
  
 setup(
-    name='omnitrix-app',
+    name='omnitrix',
     version='1.0',
     scripts=['omnitrix'],
     license="gpl-3.0",
@@ -19,9 +19,7 @@ setup(
     
     classifiers=[
     'Development Status :: 5 - Production/Stable',
-    'Intended Audience :: cosplay',
     'Topic :: Software Development :: Build Tools',
-    'License :: OSI Approved :: GNU General Public License v3.0',   # Again, pick a license
     'Programming Language :: Python :: 3',
   ],
 )
