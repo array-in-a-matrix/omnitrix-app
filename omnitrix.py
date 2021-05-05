@@ -12,7 +12,7 @@ background = StringVar()
 background.set("#70b607")
 # creates var and assigns it to default color
 root.title("Omnitrix")
-# root.attributes('-fullscreen', True)
+root.attributes('-fullscreen', True)
 root.geometry("640x480")
 root.configure(bg=background.get())
 root.columnconfigure(1, weight=1)
