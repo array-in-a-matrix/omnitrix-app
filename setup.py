@@ -8,7 +8,7 @@ setup(
     discription="App that simulates the omnitrix from the ben 10 tv show",
     author="array-in-a-matrix",
     url="https://array-in-a-matrix.github.io/",
-    download_url="https://github.com/array-in-a-matrix/raspberry-pi-omnitrix/archive/refs/tags/1.0.tar.gz",
+    download_url="https://github.com/array-in-a-matrix/omnitrix-app/archive/refs/tags/1.0.tar.gz",
     keywords = ["game"],
 
     install_requires=[
