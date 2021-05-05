@@ -2,6 +2,8 @@ __pycache__/
 
 test*
 
-main.py
-
 res/*png~
+
+dist/
+
+omnitrix.egg-info
