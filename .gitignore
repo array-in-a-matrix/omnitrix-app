@@ -7,3 +7,5 @@ res/*png~
 dist/
 
 omnitrix.egg-info
+
+setup*
